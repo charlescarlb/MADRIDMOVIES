@@ -4,7 +4,7 @@ let movies = [
     {
       title: "The Northman",
       year: 2022,
-      posterSrc: "/images/upcoming-1.png",
+      posterSrc: "./images/upcoming-1.png",
       duration: 137,
       rating: 8.5,
       isHD: true
@@ -12,7 +12,7 @@ let movies = [
     {
       title: "Doctor Strange in the Multiverse of Madness",
       year: 2022,
-      posterSrc: "/images/upcoming-2.png",
+      posterSrc: "./images/upcoming-2.png",
       duration: 148,
       rating: 8.8,
       isHD: true
@@ -20,7 +20,7 @@ let movies = [
     {
       title: "Memory",
       year:2022,
-      posterSrc: "/images/upcoming-3.png",
+      posterSrc: "./images/upcoming-3.png",
       duration: 175,
       rating: 9.2,
       isHD: false
