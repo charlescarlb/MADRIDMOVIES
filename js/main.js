@@ -59,7 +59,7 @@ link.append(figure)
 img.src=movie.posterSrc
 figure.append(img)
 img.alt=movie.title
-div.classList.add("title-wrapper");
+titleWrapper.classList.add("title-wrapper");
 div.append(titleWrapper);
 titleWrapper.append(titleLink);
 titleLink.href = "./movie-details.html";
@@ -80,7 +80,7 @@ duration.classList.add("duration");
 duration.append(durationIcon);
 durationIcon.setAttribute("name", "time-outline");
 duration.append(durationTime);
-durationTime.setAttribute("datetime", `PT${movie.duration}M`);
+duration.setAttribute("datetime", `PT${movie.duration}M`);
 durationTime.textContent = `${movie.duration} min`;
 cardMeta.append(rating);
 rating.classList.add("rating");
@@ -90,3 +90,9 @@ rating.append(ratingData);
 ratingData.textContent = movie.rating;
 });
   
+
+let movieCard =[
+
+
+
+]

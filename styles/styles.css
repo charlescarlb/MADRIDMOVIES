@@ -366,7 +366,7 @@ body.active { overflow: hidden; }
 \*-----------------------------------*/
 
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -375,10 +375,16 @@ body.active { overflow: hidden; }
   z-index: 4;
 }
 
-.logo  {
-position 
 
+a.logo {
+    display: inline;
+    text-align: right;
+}
 
+.logo  img{
+    width: 50%;
+    height: 50%;
+    display: inline;
 }
 
 .header.active {
@@ -1059,6 +1065,21 @@ position
  * #MEDIA QUERIES
 \*-----------------------------------*/
 
+
+/**
+* We want the logo to be on the left side when the full menu disappears due to a smaller screen.
+*/
+@media (max-width: 992px) {
+    /**
+    * LOGO
+    */
+    a.logo {
+        text-align: left;
+    }
+    
+}
+
+
 /**
  * responsive for large than 550px screen
  */
@@ -1078,6 +1099,7 @@ position
     --fs-1: 42px;
 
   }
+
 
 
 
@@ -1521,6 +1543,7 @@ position
     --fs-11: 14px;
     padding: 10px 35px;
     letter-spacing: 1px;
+  white-space: nowrap;
   }
 
 
